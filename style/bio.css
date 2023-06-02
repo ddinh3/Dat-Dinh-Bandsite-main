@@ -1,0 +1,43 @@
+body {
+  margin: auto;
+}
+body .header {
+  font-size: 1.5rem;
+  height: 2rem;
+  font-weight: 700;
+  background-color: #323232;
+  display: flex;
+  justify-content: center;
+  margin-bottom: auto;
+}
+body .header .logo {
+  text-decoration: none;
+  color: white;
+}
+body nav ul {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: flex;
+  background-color: #323232;
+  justify-content: space-evenly;
+  font-size: 1.5rem;
+  height: 2rem;
+  font-weight: 700;
+  list-style-type: none;
+}
+body nav ul .nav__link {
+  text-decoration: none;
+  color: white;
+  background-color: #323232;
+}
+body .hero-section .hero-img {
+  opacity: 0.5;
+}
+body .hero-section h1 {
+  position: relative;
+  left: 2.25rem;
+  bottom: 25.125rem;
+  font-size: 4.8125rem;
+  color: white;
+  font-weight: 700;
+}
