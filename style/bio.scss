@@ -1,6 +1,9 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
 @font-face {
   font-family: 'AvenirNext';
-  src: url(../font/AvenirNextLTPro-Regular.otf) format('truetype');
+  src: url(../assets/Font/AvenirNextLTPro-Regular.otf) format('truetype');
 }
 
 
@@ -19,7 +22,7 @@ body {
   
       .logo {
         text-decoration: none;
-        color: white;
+        color: $primary-colorwhite;
       }
     }
   }
@@ -29,7 +32,7 @@ body {
         margin-top: auto;
         margin-bottom: auto;
         display: flex;
-        background-color: #323232;
+        background-color:$primary-colorblack;
         justify-content: space-evenly;
         font-size: 1.5rem;
         height: 2rem;
@@ -38,8 +41,8 @@ body {
   
         .nav__link {
           text-decoration: none;
-          color: white;
-          background-color: #323232;
+          color: $primary-colorwhite;
+          background-color: $primary-colorblack;
         }
       }
     }
@@ -56,11 +59,11 @@ body {
   
       h1 {
         font-size: 4.8125rem;
-        color: white;
+        color: $primary-colorwhite;
         font-weight: 700;
         position: relative;
-        top: 150px;
-        left: 15px;
+        top: 9.375rem;
+        left: .9375rem;
       }
     }
 
@@ -69,14 +72,22 @@ body {
     padding-right: 1rem;
     h1 {
       display: flex;
-      color: #323232;
+      color: $primary-colorblack;
       justify-content: center;
       position:relative;
+    }
+    h3 {
+      color:$secondary-colordblack;
+      font-size: 2.25rem;
+  
+    }
+    h2 {
+      color:$primary-colorblack;
     }
   }
 
 .gallery {
-  background-color: #fafafa;
+  background-color: $secondary-coloralabaster;
   padding-left: 1rem;
   padding-right: 1rem;
   img {
@@ -87,6 +98,6 @@ body {
 footer {
     font-size: .8125rem;
     font-weight: 700;
-    background-color: #323232;
-    color: white;
+    background-color:$primary-colorblack;
+    color: $primary-colorwhite;
   }

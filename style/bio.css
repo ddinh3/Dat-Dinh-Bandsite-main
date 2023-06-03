@@ -1,6 +1,6 @@
 @font-face {
   font-family: "AvenirNext";
-  src: url(../font/AvenirNextLTPro-Regular.otf) format("truetype");
+  src: url(../assets/Font/AvenirNextLTPro-Regular.otf) format("truetype");
 }
 body {
   margin: auto;
@@ -17,7 +17,7 @@ body .header {
 }
 body .header .logo {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
 }
 
 nav ul {
@@ -33,7 +33,7 @@ nav ul {
 }
 nav ul .nav__link {
   text-decoration: none;
-  color: white;
+  color: #FFFFFF;
   background-color: #323232;
 }
 
@@ -49,11 +49,11 @@ nav ul .nav__link {
 }
 .hero-section h1 {
   font-size: 4.8125rem;
-  color: white;
+  color: #FFFFFF;
   font-weight: 700;
   position: relative;
-  top: 150px;
-  left: 15px;
+  top: 9.375rem;
+  left: 0.9375rem;
 }
 
 .band-description {
@@ -66,9 +66,16 @@ nav ul .nav__link {
   justify-content: center;
   position: relative;
 }
+.band-description h3 {
+  color: #000000;
+  font-size: 2.25rem;
+}
+.band-description h2 {
+  color: #323232;
+}
 
 .gallery {
-  background-color: #fafafa;
+  background-color: #FAFAFA;
   padding-left: 1rem;
   padding-right: 1rem;
 }
@@ -80,5 +87,5 @@ footer {
   font-size: 0.8125rem;
   font-weight: 700;
   background-color: #323232;
-  color: white;
+  color: #FFFFFF;
 }
