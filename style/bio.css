@@ -30,31 +30,29 @@ body nav ul .nav__link {
   color: white;
   background-color: #323232;
 }
+body .hero-section {
+  position: relative;
+}
 body .hero-section .hero-img {
   opacity: 0.5;
   margin: auto;
 }
 body .hero-section h1 {
+  max-width: -moz-fit-content;
+  max-width: fit-content;
   position: relative;
-  left: 2.25rem;
-  bottom: 25.125rem;
+  bottom: 20.125rem;
   font-size: 4.8125rem;
   color: white;
   font-weight: 700;
+  margin: auto;
 }
 
-.band-description {
-  position: relative;
-}
 .band-description h1 {
+  display: flex;
   color: #323232;
-  border: solid black 2px;
   justify-content: center;
-  left: 9.25rem;
   position: relative;
-}
-.band-description img {
-  padding: 16px;
 }
 
 footer {

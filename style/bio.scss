@@ -37,6 +37,7 @@ body {
     }
   
     .hero-section {
+      position: relative;
       .hero-img {
         // width: 6.25rem;
         opacity: 0.5;
@@ -44,29 +45,23 @@ body {
       }
   
       h1 {
+        max-width: fit-content;
         position: relative;
-        left: 2.25rem;
-        bottom: 25.125rem;
+        bottom: 20.125rem;
         font-size: 4.8125rem;
         color: white;
         font-weight: 700;
+        margin: auto;
       }
     }
   }
 
   .band-description{
-    position: relative;
     h1 {
+      display: flex;
       color: #323232;
-      border:solid black 2px;
       justify-content: center;
-      left:9.25rem;
       position:relative;
-    }
-    img{
-      padding:16px
-
-
     }
   }
 
