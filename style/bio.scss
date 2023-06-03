@@ -1,6 +1,13 @@
+@font-face {
+  font-family: 'AvenirNext';
+  src: url(../font/AvenirNextLTPro-Regular.otf) format('truetype');
+}
+
+
 body {
     margin: auto;
-  
+    font-family: 'AvenirNext', sans-serif;
+
     .header {
       font-size: 1.5rem;
       height: 2rem;
@@ -15,6 +22,7 @@ body {
         color: white;
       }
     }
+  }
   
     nav {
       ul {
@@ -38,25 +46,27 @@ body {
   
     .hero-section {
       position: relative;
-      .hero-img {
-        // width: 6.25rem;
-        opacity: 0.5;
-        margin: auto;
-      }
+      display: flex;
+      align-items: flex-start;
+      background-image: url("../assets/Images/hero-bio.jpg");
+      background-size: 100% auto;
+      max-height: fit-content;
+      height: 40vh;
+      
   
       h1 {
-        max-width: fit-content;
-        position: relative;
-        bottom: 20.125rem;
         font-size: 4.8125rem;
         color: white;
         font-weight: 700;
-        margin: auto;
+        position: relative;
+        top: 150px;
+        left: 15px;
       }
     }
-  }
 
   .band-description{
+    padding-left: 1rem;
+    padding-right: 1rem;
     h1 {
       display: flex;
       color: #323232;
@@ -64,6 +74,15 @@ body {
       position:relative;
     }
   }
+
+.gallery {
+  background-color: #fafafa;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  img {
+    margin-top: 24px;
+  }
+}
 
 footer {
     font-size: .8125rem;
