@@ -40,6 +40,7 @@ body {
       .hero-img {
         // width: 6.25rem;
         opacity: 0.5;
+        margin: auto;
       }
   
       h1 {
@@ -51,4 +52,27 @@ body {
         font-weight: 700;
       }
     }
+  }
+
+  .band-description{
+    position: relative;
+    h1 {
+      color: #323232;
+      border:solid black 2px;
+      justify-content: center;
+      left:9.25rem;
+      position:relative;
+    }
+    img{
+      padding:16px
+
+
+    }
+  }
+
+footer {
+    font-size: .8125rem;
+    font-weight: 700;
+    background-color: #323232;
+    color: white;
   }
