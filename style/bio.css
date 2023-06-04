@@ -8,23 +8,28 @@ body {
 }
 body .header {
   font-size: 1.5rem;
-  height: 2rem;
+  height: 5rem;
   font-weight: 700;
   background-color: #323232;
   display: flex;
   justify-content: center;
   margin-bottom: auto;
+  flex-direction: column;
 }
-body .header .logo {
+body .header__logo {
   text-decoration: none;
   color: #FFFFFF;
+  display: flex;
+  justify-content: center;
 }
 @media screen and (min-width: 768px) {
   body .header {
     padding: 3rem 1.5rem;
     display: flex;
     justify-content: flex-start;
-    align-items: center;
+    align-items: flex-end;
+    flex-direction: row;
+    height: 2rem;
   }
 }
 body nav ul {
@@ -38,13 +43,13 @@ body nav ul {
   font-weight: 700;
   list-style-type: none;
 }
-body nav ul .nav__link {
+body nav ul li a {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #323232;
 }
 @media screen and (min-width: 768px) {
-  body nav ul .nav__link {
+  body nav ul li a {
     margin-right: 2rem;
   }
 }
@@ -56,15 +61,16 @@ body .hero-section {
   background-size: 100% auto;
   max-height: -moz-fit-content;
   max-height: fit-content;
-  height: 40vh;
+  height: 50vh;
+  background-repeat: no-repeat;
 }
 body .hero-section h1 {
-  font-size: 4.8125rem;
+  font-size: 2.8125rem;
   color: #FFFFFF;
   font-weight: 700;
   position: relative;
-  top: 9.375rem;
-  left: 0.9375rem;
+  top: 12.375rem;
+  left: 1.9375rem;
 }
 body .band-description {
   padding-left: 1rem;
@@ -72,21 +78,29 @@ body .band-description {
   display: flex;
   flex-direction: column;
 }
-body .band-description h1 {
+body .band-description__title {
   display: flex;
   color: #323232;
-  justify-content: center;
   position: relative;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-weight: 700;
 }
-body .band-description h3 {
+body .band-description__quote {
   color: #000000;
-  font-size: 3.25rem;
 }
-body .band-description h2 {
-  color: #323232;
+body .band-description__image {
+  width: 95%;
+  padding-left: 16px;
+}
+body .band-description__band-name {
+  color: #000000;
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 22px;
 }
 @media screen and (min-width: 768px) {
-  body .band-description .description-text {
+  body .band-description__text {
     -moz-column-count: 2;
          column-count: 2;
     -moz-column-gap: 20px;
@@ -102,21 +116,21 @@ body .gallery {
   padding-right: 1rem;
   text-align: center;
 }
-body .gallery img {
+body .gallery__img {
   margin-top: 24px;
 }
-body .gallery .gallery-flex {
+body .gallery__flex {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-body .gallery .gallery-flex img {
+body .gallery__flex img {
   width: 100%;
   height: auto;
   margin: 5px;
 }
 @media screen and (min-width: 768px) {
-  body .gallery .gallery-flex img {
+  body .gallery .gallery__flex img {
     width: calc(33.33% - 10px);
   }
 }
@@ -128,20 +142,13 @@ body footer {
 }
 body footer .footer-profiles {
   display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  body footer .footer-profiles {
+    flex-direction: row;
+  }
 }
 body footer .footer-profiles .footer-profile {
   flex: 1 1 33%;
-}
-@media screen and (min-width: 768px) {
-  body footer .footer-profiles .footer-profile {
-    flex-basis: 100%;
-  }
-}
-
-.copyright h1.copyright__title {
-  position: relative;
-  bottom: 250px;
-  left: 550px;
-  max-width: -moz-fit-content;
-  max-width: fit-content;
 }

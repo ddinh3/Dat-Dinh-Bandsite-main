@@ -13,32 +13,29 @@ body {
 
     .header {
       font-size: 1.5rem;
-      height: 2rem;
+      height: 5rem;
       font-weight: 700;
       background-color: #323232;
       display: flex;
       justify-content: center;
       margin-bottom: auto;
+      flex-direction: column;
     
-      .logo {
+      &__logo {
         text-decoration: none;
         color: $primary-colorwhite;
+        display: flex;
+        justify-content: center;
       }
     
       @media screen and (min-width: 768px) {
         padding: 3rem 1.5rem;
         display: flex;
         justify-content: flex-start;
-        align-items: center;
-    
-        // .logo {
-        //   margin-left: 40px;
-        //   margin-top: 40px;
-        //   ul.nav__link{
-        //     border: solid black 2px;
-        //   }
-        // }
-      }
+        align-items: flex-end;
+        flex-direction: row;
+        height: 2rem;
+    }
     }
     
     nav {
@@ -53,12 +50,16 @@ body {
         font-weight: 700;
         list-style-type: none;
     
-        .nav__link {
+        li {
+          a{ 
           text-decoration: none;
           color: $primary-colorwhite;
           background-color: $primary-colorblack;
+          
+
           @media screen and (min-width: 768px) {
             margin-right: 2rem;
+          }
           }
         }
       }
@@ -71,16 +72,17 @@ body {
       background-image: url("../assets/Images/hero-bio.jpg");
       background-size: 100% auto;
       max-height: fit-content;
-      height: 40vh;
+      height: 50vh;
+      background-repeat: no-repeat;
       
   
       h1 {
-        font-size: 4.8125rem;
+        font-size: 2.8125rem;
         color: $primary-colorwhite;
         font-weight: 700;
         position: relative;
-        top: 9.375rem;
-        left: .9375rem;
+        top: 12.375rem;
+        left: 1.9375rem;
       }
     }
 
@@ -89,21 +91,29 @@ body {
     padding-right: 1rem;
     display: flex;
     flex-direction: column;
-    h1 {
+
+    &__title {
       display: flex;
       color: $primary-colorblack;
-      justify-content: center;
       position:relative;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      font-weight: 700;
     }
-    h3 {
+    &__quote {
       color:$secondary-colordblack;
-      font-size: 3.25rem;
-  
     }
-    h2 {
-      color:$primary-colorblack;
+    &__image {
+      width: 95%;
+      padding-left: 16px;
     }
-    .description-text {
+    &__band-name {
+      color:$secondary-colordblack;
+      font-size: 1.85rem;
+      font-weight: 600;
+      line-height: 22px;
+    }
+    &__text {
       @media screen and (min-width: 768px) {
         column-count: 2;
         column-gap: 20px;
@@ -121,10 +131,12 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
-  img {
+
+  &__img {
     margin-top: 24px;
   }
-  .gallery-flex {
+
+  &__flex {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -137,7 +149,7 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    .gallery-flex img {
+    .gallery__flex img {
       width: calc(33.33% - 10px);
     }
   }
@@ -147,28 +159,21 @@ footer {
     font-weight: 700;
     background-color:$primary-colorblack;
     color: $primary-colorwhite;
+
     .footer-profiles{
       display: flex;
-      
+      flex-direction: column;
 
+      @media screen and (min-width:768px) {
+        flex-direction: row;
+      }
+      
       .footer-profile {
         flex: 1 1 33%;
-        @media screen and (min-width:768px) {
-          flex-basis: 100%;
-        }
+
       }
     }
   }
 }
 
-.copyright {
-  h1.copyright__title{
-    position: relative;
-    bottom: 250px;
-    left: 550px;
-    max-width: fit-content;
-    @media screen and (min-width768px){
-
-    }
-  }
-}
+    
