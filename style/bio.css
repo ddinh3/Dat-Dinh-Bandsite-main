@@ -19,8 +19,21 @@ body .header .logo {
   text-decoration: none;
   color: #FFFFFF;
 }
-
-nav ul {
+@media screen and (min-width: 768px) {
+  body .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .header .logo {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+  body .header .logo ul.nav__link {
+    border: solid black 2px;
+  }
+}
+body nav ul {
   margin-top: auto;
   margin-bottom: auto;
   display: flex;
@@ -31,13 +44,12 @@ nav ul {
   font-weight: 700;
   list-style-type: none;
 }
-nav ul .nav__link {
+body nav ul .nav__link {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #323232;
 }
-
-.hero-section {
+body .hero-section {
   position: relative;
   display: flex;
   align-items: flex-start;
@@ -47,7 +59,7 @@ nav ul .nav__link {
   max-height: fit-content;
   height: 40vh;
 }
-.hero-section h1 {
+body .hero-section h1 {
   font-size: 4.8125rem;
   color: #FFFFFF;
   font-weight: 700;
@@ -55,35 +67,61 @@ nav ul .nav__link {
   top: 9.375rem;
   left: 0.9375rem;
 }
-
-.band-description {
+body .band-description {
   padding-left: 1rem;
   padding-right: 1rem;
+  display: flex;
+  flex-direction: column;
 }
-.band-description h1 {
+body .band-description h1 {
   display: flex;
   color: #323232;
   justify-content: center;
   position: relative;
 }
-.band-description h3 {
+body .band-description h3 {
   color: #000000;
-  font-size: 2.25rem;
+  font-size: 3.25rem;
 }
-.band-description h2 {
+body .band-description h2 {
   color: #323232;
 }
-
-.gallery {
+@media screen and (min-width: 768px) {
+  body .band-description .description-text {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+    text-align: start;
+    font-size: 0.875rem;
+    font-weight: 400;
+  }
+}
+body .gallery {
   background-color: #FAFAFA;
   padding-left: 1rem;
   padding-right: 1rem;
+  text-align: center;
 }
-.gallery img {
+body .gallery img {
   margin-top: 24px;
 }
-
-footer {
+body .gallery .gallery-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body .gallery .gallery-flex img {
+  width: 100%;
+  height: auto;
+  margin: 5px;
+}
+@media screen and (min-width: 768px) {
+  body .gallery .gallery-flex img {
+    width: calc(33.33% - 10px);
+  }
+}
+body footer {
   font-size: 0.8125rem;
   font-weight: 700;
   background-color: #323232;
