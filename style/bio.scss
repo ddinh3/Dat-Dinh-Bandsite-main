@@ -26,17 +26,18 @@ body {
       }
     
       @media screen and (min-width: 768px) {
+        padding: 3rem 1.5rem;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
         align-items: center;
     
-        .logo {
-          margin-left: 40px;
-          margin-top: 40px;
-          ul.nav__link{
-            border: solid black 2px;
-          }
-        }
+        // .logo {
+        //   margin-left: 40px;
+        //   margin-top: 40px;
+        //   ul.nav__link{
+        //     border: solid black 2px;
+        //   }
+        // }
       }
     }
     
@@ -56,6 +57,9 @@ body {
           text-decoration: none;
           color: $primary-colorwhite;
           background-color: $primary-colorblack;
+          @media screen and (min-width: 768px) {
+            margin-right: 2rem;
+          }
         }
       }
     }
@@ -143,5 +147,28 @@ footer {
     font-weight: 700;
     background-color:$primary-colorblack;
     color: $primary-colorwhite;
+    .footer-profiles{
+      display: flex;
+      
+
+      .footer-profile {
+        flex: 1 1 33%;
+        @media screen and (min-width:768px) {
+          flex-basis: 100%;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  h1.copyright__title{
+    position: relative;
+    bottom: 250px;
+    left: 550px;
+    max-width: fit-content;
+    @media screen and (min-width768px){
+
+    }
   }
 }

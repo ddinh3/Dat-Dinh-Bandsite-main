@@ -21,16 +21,10 @@ body .header .logo {
 }
 @media screen and (min-width: 768px) {
   body .header {
+    padding: 3rem 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
-  }
-  body .header .logo {
-    margin-left: 40px;
-    margin-top: 40px;
-  }
-  body .header .logo ul.nav__link {
-    border: solid black 2px;
   }
 }
 body nav ul {
@@ -48,6 +42,11 @@ body nav ul .nav__link {
   text-decoration: none;
   color: #FFFFFF;
   background-color: #323232;
+}
+@media screen and (min-width: 768px) {
+  body nav ul .nav__link {
+    margin-right: 2rem;
+  }
 }
 body .hero-section {
   position: relative;
@@ -126,4 +125,23 @@ body footer {
   font-weight: 700;
   background-color: #323232;
   color: #FFFFFF;
+}
+body footer .footer-profiles {
+  display: flex;
+}
+body footer .footer-profiles .footer-profile {
+  flex: 1 1 33%;
+}
+@media screen and (min-width: 768px) {
+  body footer .footer-profiles .footer-profile {
+    flex-basis: 100%;
+  }
+}
+
+.copyright h1.copyright__title {
+  position: relative;
+  bottom: 250px;
+  left: 550px;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
 }
