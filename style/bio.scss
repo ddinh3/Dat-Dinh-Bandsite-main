@@ -275,9 +275,9 @@ footer {
 }
 
 .comment {
-  background-color: $primary-colorwhite;
+  background-color: $primary-color white;
   margin: 0 1rem;
-  
+
   &__title {
     font-size: 2rem;
     margin: 2rem 0;
@@ -287,201 +287,60 @@ footer {
     width: 4rem;
     height: 4rem;
     border-radius: 2rem;
-
   }
 
   &__name-container {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $secondary-colormercury;
+    border-bottom: 1px solid $secondary-color mercury;
   }
 
   &__input-container {
     display: flex;
     flex-direction: column;
-  } 
+  }
 
- &__text-container {
-  font-size: .8125rem;
-  border: 1px solid $primary-colorsilver;
-  width:28rem;
-  background-color: $secondary-coloralabaster;
-  border-color: $primary-colorsilver;
-  &--one {
-    margin: auto;
-    height:2.5rem;
-    padding: .625rem
-  }
-  &--two {
-    margin:auto;
-    height: 2.5rem;
-    padding: .625rem
-  }
- }
-
-&__button {
-  background-color: $primary-colorblack;
-  border-style: none;
-  height: 2.5rem;
-  color: $primary-colorwhite;
-  text-align: center;
-  width: 10rem;
-}
-&__default {
-  border-bottom: 1px solid $secondary-colormercury;
-}
-&__header {
-  display: flex;
-  justify-content: space-between;
-  &--image-one {
-    height: 3rem;
-    width: 3rem;
-    background-color: $secondary-colormercury;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    margin-top: 1.5rem;
-  }
-}
-}
-@include tablet {
-  .comment {  background-color: $primary-colorwhite;
-    margin: 0 1rem;
-    
-    &__title {
-      font-size: 2rem;
-      margin: 2rem 0;
-    }
-  
-    &__img {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 2rem;
-  
-    }
-  
-    &__name-container {
-      display: flex;
-      justify-content:center;
-      border-bottom: 1px solid $secondary-colormercury;
-    }
-  
-    &__input-container {
-      display: flex;
-      flex-direction: column;
-    } 
-  
-   &__text-container {
+  &__text-container {
     font-size: .8125rem;
-    border: 1px solid $primary-colorsilver;
-    width:28rem;
-    background-color: $secondary-coloralabaster;
-    border-color: $primary-colorsilver;
+    border: 1px solid $primary-color silver;
+    width: 28rem;
+    background-color: $secondary-color alabaster;
+    border-color: $primary-color silver;
+
     &--one {
       margin: auto;
-      height:2.5rem;
-      padding: .625rem
-    }
-    &--two {
-      margin:auto;
       height: 2.5rem;
-      padding: .625rem
+      padding: .625rem;
     }
-   }
-  
-  &__button {
-    background-color: $primary-colorblack;
-    border-style: none;
-    height: 2.5rem;
-    color: $primary-colorwhite;
-    text-align: center;
-    width: 10rem;
-  } 
-}
-&__default {
-  border-bottom: 1px solid $secondary-colormercury;
-}
-&__header {
-  display: flex;
-  justify-content: space-between;
-  &--image-one {
-    height: 3rem;
-    width: 3rem;
-    background-color: $secondary-colormercury;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 2rem;
-    margin-top: 1.5rem;
-  }
-}
-}
 
-
-@include desktop {
-  .comment {  background-color: $primary-colorwhite;
-    margin: 0 1rem;
-    
-    &__title {
-      font-size: 2rem;
-      margin: 2rem 0;
-    }
-  
-    &__img {
-      width: 4rem;
-      height: 4rem;
-      border-radius: 2rem;
-  
-    }
-  
-    &__name-container {
-      display: flex;
-      justify-content:center;
-      border-bottom: 1px solid $secondary-colormercury;
-    }
-  
-    &__input-container {
-      display: flex;
-      flex-direction: column;
-    } 
-  
-   &__text-container {
-    font-size: .8125rem;
-    border: 1px solid $primary-colorsilver;
-    width:28rem;
-    background-color: $secondary-coloralabaster;
-    border-color: $primary-colorsilver;
-    &--one {
+    &--two {
       margin: auto;
-      height:2.5rem;
-      padding: .625rem
-    }
-    &--two {
-      margin:auto;
       height: 2.5rem;
-      padding: .625rem
+      padding: .625rem;
     }
-   }
-  
+  }
+
   &__button {
-    background-color: $primary-colorblack;
+    background-color: $primary-color black;
     border-style: none;
     height: 2.5rem;
-    color: $primary-colorwhite;
+    color: $primary-color white;
     text-align: center;
     width: 10rem;
-  } 
+  }
+
   &__default {
-    border-bottom: 1px solid $secondary-colormercury;
+    border-bottom: 1px solid $secondary-color mercury;
   }
+
   &__header {
     display: flex;
     justify-content: space-between;
+
     &--image-one {
       height: 3rem;
       width: 3rem;
-      background-color: $secondary-colormercury;
+      background-color: $secondary-color mercury;
       background-size: cover;
       background-position: center;
       background-repeat: no-repeat;
@@ -489,5 +348,161 @@ footer {
       margin-top: 1.5rem;
     }
   }
+
+  @include tablet {
+    .comment {
+      background-color: $primary-color white;
+      margin: 0 1rem;
+
+      &__title {
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+
+      &__img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 2rem;
+      }
+
+      &__name-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $secondary-color mercury;
+      }
+
+      &__input-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__text-container {
+        font-size: .8125rem;
+        border: 1px solid $primary-colorsilver;
+        width: 28rem;
+        background-color: $secondary-coloralabaster;
+        border-color: $primary-colorsilver;
+
+        &--one {
+          margin: auto;
+          height: 2.5rem;
+          padding: .625rem;
+        }
+
+        &--two {
+          margin: auto;
+          height: 2.5rem;
+          padding: .625rem;
+        }
+      }
+
+      &__button {
+        background-color: $primary-colorblack;
+        border-style: none;
+        height: 2.5rem;
+        color: $primary-colorwhite;
+        text-align: center;
+        width: 10rem;
+      }
+
+      &__default {
+        border-bottom: 1px solid $secondary-colormercury;
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &--image-one {
+          height: 3rem;
+          width: 3rem;
+          background-color: $secondary-colormercury;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 2rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+
+  @include desktop {
+    .comment {
+      background-color: $primary-colorwhite;
+      margin: 0 1rem;
+
+      &__title {
+        font-size: 2rem;
+        margin: 2rem 0;
+      }
+
+      &__img {
+        width: 4rem;
+        height: 4rem;
+        border-radius: 2rem;
+      }
+
+      &__name-container {
+        display: flex;
+        justify-content: center;
+        border-bottom: 1px solid $secondary-colormercury;
+      }
+
+      &__input-container {
+        display: flex;
+        flex-direction: column;
+      }
+
+      &__text-container {
+        font-size: .8125rem;
+        border: 1px solid $primary-colorsilver;
+        width: 28rem;
+        background-color: $secondary-coloralabaster;
+        border-color: $primary-colorsilver;
+
+        &--one {
+          margin: auto;
+          height: 2.5rem;
+          padding: .625rem;
+        }
+
+        &--two {
+          margin: auto;
+          height: 2.5rem;
+          padding: .625rem;
+        }
+      }
+
+      &__button {
+        display: flex;
+        background-color: $primary-colorblack;
+        border-style: none;
+        height: 2.5rem;
+        color: $primary-color white;
+        text-align: center;
+        width: 10rem;
+      }
+
+      &__default {
+        border-bottom: 1px solid $secondary-colormercury;
+      }
+
+      &__header {
+        display: flex;
+        justify-content: space-between;
+
+        &--image-one {
+          height: 3rem;
+          width: 3rem;
+          background-color: $secondary-colormercury;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          border-radius: 2rem;
+          margin-top: 1.5rem;
+        }
+      }
+    }
   }
 }
