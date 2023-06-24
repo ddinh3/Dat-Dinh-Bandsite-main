@@ -269,6 +269,11 @@ body footer .footer-profiles .footer-profile {
   font-size: 2rem;
   margin: 2rem 0;
 }
+.comment__img {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+}
 .comment__name-container {
   display: flex;
   justify-content: space-between;
