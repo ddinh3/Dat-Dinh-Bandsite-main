@@ -279,7 +279,7 @@ body footer .footer-profiles .footer-profile {
   justify-content: space-between;
   border-bottom: 1px solid #E1E1E1;
 }
-.comment__post-container {
+.comment__input-container {
   display: flex;
   flex-direction: column;
 }
