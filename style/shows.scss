@@ -83,6 +83,112 @@ body {
     }
 
     // need shows before footer 
+.hero-section {
+  width: 100vw;
+  height: 29.5rem;
+  background-image: url("../assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  
+  &__container {
+  height: 29.5rem;
+  padding:0 1rem ;
+  }
+
+  &__subtitle {
+    color: $primary-colorwhite;
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 4rem 0 0 0;
+  }
+
+  &__maintitle {
+    color: $primary-colorwhite;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    padding: 1rem 0 4rem 0;
+  }
+
+  &__sound {
+    width: 15rem;
+    height: 4rem;
+  }
+}
+@include tablet {
+  .hero-section {
+  width: 100vw;
+  height: 41.5rem;
+  
+  &__container {
+    width: 100vw;
+  height: 29.5rem;
+  padding:0 1rem ;
+  }
+
+  &__subtitle {
+    color: $primary-colorwhite;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 6rem 0 0 0;
+  }
+
+  &__maintitle {
+    color: $primary-colorwhite;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    width: 40rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  &__sound {
+    width: 30rem;
+    height: 8rem;
+  }
+}
+}
+@include desktop {
+    .hero-section {
+  width: 100vw;
+  height: 41.5rem;
+  
+  &__container {
+    width: 100vw;
+  height: 29.5rem;
+  padding:0 1rem ;
+  }
+
+  &__subtitle {
+    color: $primary-colorwhite;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 6rem 0 0 0;
+  }
+
+  &__maintitle {
+    color: $primary-colorwhite;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    width: 40rem;
+    padding: 3rem 0 3rem 0;
+  }
+
+  &__sound {
+    width: 30rem;
+    height: 8rem;
+  }
+}
+}
+
+
+
+
+
+
+
 
     footer {
         font-size: .8125rem;

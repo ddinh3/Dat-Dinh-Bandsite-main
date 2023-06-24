@@ -75,6 +75,93 @@ body .header__nav-items a:hover {
 body .header__nav-items a.active {
   border-bottom: 0.1875rem solid #FFFFFF;
 }
+body .hero-section {
+  width: 100vw;
+  height: 29.5rem;
+  background-image: url("../assets/Images/hero-shows.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body .hero-section__container {
+  height: 29.5rem;
+  padding: 0 1rem;
+}
+body .hero-section__subtitle {
+  color: #FFFFFF;
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 4rem 0 0 0;
+}
+body .hero-section__maintitle {
+  color: #FFFFFF;
+  font-size: 2.25rem;
+  line-height: 3rem;
+  margin: 0 auto;
+  padding: 1rem 0 4rem 0;
+}
+body .hero-section__sound {
+  width: 15rem;
+  height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  body .hero-section {
+    width: 100vw;
+    height: 41.5rem;
+  }
+  body .hero-section__container {
+    width: 100vw;
+    height: 29.5rem;
+    padding: 0 1rem;
+  }
+  body .hero-section__subtitle {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 6rem 0 0 0;
+  }
+  body .hero-section__maintitle {
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    width: 40rem;
+    padding: 3rem 0 3rem 0;
+  }
+  body .hero-section__sound {
+    width: 30rem;
+    height: 8rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body .hero-section {
+    width: 100vw;
+    height: 41.5rem;
+  }
+  body .hero-section__container {
+    width: 100vw;
+    height: 29.5rem;
+    padding: 0 1rem;
+  }
+  body .hero-section__subtitle {
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin: 0 auto;
+    padding: 6rem 0 0 0;
+  }
+  body .hero-section__maintitle {
+    color: #FFFFFF;
+    font-size: 2.25rem;
+    line-height: 3rem;
+    margin: 0 auto;
+    width: 40rem;
+    padding: 3rem 0 3rem 0;
+  }
+  body .hero-section__sound {
+    width: 30rem;
+    height: 8rem;
+  }
+}
 body footer {
   font-size: 0.8125rem;
   font-weight: 700;
