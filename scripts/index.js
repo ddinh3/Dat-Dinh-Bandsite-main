@@ -107,7 +107,7 @@ textContainer.classList.add("comment__text-container-default");
 defaultContainer.appendChild(textContainer);
 
 let comment = document.createElement("p");
-comment.classList.add("comment__text-container-default--comment");
+comment.classList.add("comment__text-container-default-comment");
 comment.innerText = newComment.comment;
 textContainer.appendChild(comment);
 
@@ -116,4 +116,4 @@ top.insertBefore(defaultContainer, top.childNodes[0]);
 
 let clearInput = document.querySelector(".comment__input-container");
 clearInput.reset();
-});
+})
