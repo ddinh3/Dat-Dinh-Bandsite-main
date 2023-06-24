@@ -1,0 +1,174 @@
+@use "partials/variables" as *;
+@use "partials/mixins" as *;
+
+@font-face {
+  font-family: 'AvenirNext';
+  src: url(../assets/Font/AvenirNextLTPro-Regular.otf) format('truetype');
+}
+
+
+body {
+    margin: auto;
+    font-family: 'AvenirNext', sans-serif;
+
+    .header {
+      font-size: 1.5rem;
+      height: 5rem;
+      font-weight: 700;
+      background-color: #323232;
+      display: flex;
+      justify-content: center;
+      margin-bottom: auto;
+      flex-direction: column;
+    
+      &__logo {
+        text-decoration: none;
+        color: $primary-colorwhite;
+        display: flex;
+        justify-content: center;
+      }
+    
+      @include tablet {
+        padding: 3rem 1.5rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        flex-direction: row;
+        height: 2rem;
+    }
+    @include desktop {
+      padding: 3rem 1.5rem;
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-end;
+      flex-direction: row;
+      height: 2rem;
+    }
+    }
+    
+    nav {
+      ul {
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        background-color: $primary-colorblack;
+        justify-content: space-evenly;
+        font-size: 1.5rem;
+        height: 2rem;
+        font-weight: 700;
+        list-style-type: none;
+        li {
+          a{ 
+          text-decoration: none;
+          color: $primary-colorwhite;
+          background-color: $primary-colorblack;
+          
+
+          @include tablet{
+            margin-right: 2rem;
+          }
+          @include desktop {
+            margin-right: 2rem;
+          }
+          }
+        }
+      }
+    }
+    .header__nav-items a:hover{
+      border-bottom: .1875rem solid $primary-colorwhite;
+      position: relative;
+    }
+    .header__nav-items a.active {
+      border-bottom: .1875rem solid $primary-colorwhite;
+    }
+
+    // need shows before footer 
+
+    footer {
+        font-size: .8125rem;
+        font-weight: 700;
+        background-color:$primary-colorblack;
+        color: $primary-colorwhite;
+        padding-left: 1rem;
+    
+        .footer__icon {
+          display: flex;
+          flex-direction: column;
+    
+          @include tablet {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            flex-direction: row;
+        }
+        @include desktop {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          flex-direction: row;
+      }
+    
+          .footer__icon-container {
+            margin-right: 3.125rem;
+            display: flex;
+            flex-direction: row;
+            align-items: flex;
+    
+            .footer__icon-link {
+              margin-right: 30px;
+              
+            }
+          }
+        }
+    
+        .footer-profiles{
+          display: flex;
+          flex-direction: column;
+    
+          @include tablet {
+            flex-direction: row;
+            .footer__icon {
+              display: flex;
+              align-items: center;
+            }
+          }
+          @include desktop {
+            flex-direction: row;
+            .footer__icon {
+              display: flex;
+              align-items: center;
+            }
+          }
+          
+          .footer-profile {
+            flex: 1 1 33%;
+    
+          }
+        }
+      }
+    }
+    
+    
+      .copyright {
+        display: flex;
+        flex-direction: column;
+      }
+    
+      @include tablet {
+      .copyright__title {
+        position: relative;
+        bottom: 240px;
+        left:600px;
+        max-width: fit-content;
+        max-height: fit-content;
+      }
+    }
+    @include desktop {
+      .copyright__title {
+        position: relative;
+        bottom: 240px;
+        left:1050px;
+        max-width: fit-content;
+        max-height: fit-content;
+      }
+    }
