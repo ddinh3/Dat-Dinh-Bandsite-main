@@ -261,3 +261,20 @@ body footer .footer-profiles .footer-profile {
     max-height: fit-content;
   }
 }
+.comment {
+  background-color: #FFFFFF;
+  margin: 0 1rem;
+}
+.comment__title {
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+.comment__name-container {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #E1E1E1;
+}
+.comment__post-container {
+  display: flex;
+  flex-direction: column;
+}

@@ -273,3 +273,26 @@ footer {
     max-height: fit-content;
   }
 }
+
+.comment {
+  background-color: $primary-colorwhite;
+  margin: 0 1rem;
+  
+  &__title {
+    font-size: 2rem;
+    margin: 2rem 0;
+  }
+
+  &__name-container {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $secondary-colormercury;
+  }
+
+  &__post-container {
+    display: flex;
+    flex-direction: column;
+  } 
+
+
+}
