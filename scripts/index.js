@@ -18,7 +18,7 @@ let comments = [
 
 function displayComments(arr)  {
     let commentContainer = document.querySelector(".comment__default-comment");
-    for (let i = 0; i <arr.length; i++) {
+    for (let i = 0; i < arr.length; i++) {
         let defaultContainer = document.createElement("div");
         defaultContainer.classList.add("comment__default");
         commentContainer.appendChild(defaultContainer);
@@ -41,8 +41,8 @@ function displayComments(arr)  {
         headerContainer.appendChild(name);
 
         let date = document.createElement("h3");
-        name.classList.add("comment__header--date");
-        name.innerText = arr[i]["date"];
+        date.classList.add("comment__header--date");
+        date.innerText = arr[i]["date"];
         headerContainer.appendChild(date);
 
         let textContainer = document.createElement("div");
@@ -50,7 +50,7 @@ function displayComments(arr)  {
         defaultContainer.appendChild(textContainer);
 
         let comment = document.createElement("p");
-        comment.classList.add("comment__text-container-default-comment");
+        comment.classList.add("comment__text-container-default--comment");
         comment.innerText = arr[i]["comment"];
         textContainer.appendChild(comment);
     }
@@ -59,12 +59,12 @@ displayComments(comments);
 
 const form = document.querySelector(".comment__input-container");
 
-form.addEventListener("submit",SubmitEvent => {
-    SubmitEvent.preventDefault();
+form.addEventListener("submit", submitEvent => {
+    submitEvent.preventDefault();
 
 const newComment = {};
-newComment.name = SubmitEvent.target.name.value;
-newComment.comment = SubmitEvent.target.comment.value;
+newComment.name = submitEvent.target.name.value;
+newComment.comment = submitEvent.target.comment.value;
 
 let commentContainer = document.querySelector(".comment__default-comment");
 
@@ -90,9 +90,9 @@ name.innerText = newComment.name;
 headerContainer.appendChild(name);
 
 let today = new Date();
-let dd = String(today.getDate()) .padStart(2, "0");
-let mm = String(today.getMonth() +1).padStart(2,"0");
-let yyyy = today.getFullyear();
+let dd = String(today.getDate()).padStart(2, "0");
+let mm = String(today.getMonth() + 1).padStart(2, "0");
+let yyyy = today.getFullYear();
 
 
 today = mm + "/" + dd + "/" + yyyy;
@@ -107,13 +107,13 @@ textContainer.classList.add("comment__text-container-default");
 defaultContainer.appendChild(textContainer);
 
 let comment = document.createElement("p");
-comment.classList.add("comment__text-container-default-comment");
+comment.classList.add("comment__text-container-default--comment");
 comment.innerText = newComment.comment;
 textContainer.appendChild(comment);
 
-let top = document.querySelector.apply(".comment__default-comment");
+let top = document.querySelector(".comment__default-comment");
 top.insertBefore(defaultContainer, top.childNodes[0]);
 
 let clearInput = document.querySelector(".comment__input-container");
 clearInput.reset();
-})
+});
