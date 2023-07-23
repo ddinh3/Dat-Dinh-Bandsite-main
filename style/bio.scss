@@ -105,82 +105,230 @@ body {
     }
 
   .band-description{
-    padding-left: 1rem;
-    padding-right: 1rem;
-    display: flex;
-    flex-direction: column;
-
+    margin: 0 1rem;
     &__title {
-      display: flex;
-      color: $primary-colorblack;
-      position:relative;
       font-size: 1.5rem;
       line-height: 2rem;
-      font-weight: 700;
+      margin: 2rem 0 1.5rem 0;
+ 
     }
-    &__quote {
-      color:$secondary-colordblack;
+    &-imgcontainer {
+      height: 45vw;
+      margin: 0 0 1.5 0;
     }
     &__image {
-      width: 95%;
-      padding-left: 16px;
+      height: 100%;
+      width: 100%;
+    }
+    &__quote {
+      font-size: 1rem;
+      line-height: 1.25rem;
+    }
+    &__musician {
+      margin: 0 0 1.5rem 0;
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
     &__band-name {
-      color:$secondary-colordblack;
-      font-size: 1.85rem;
-      font-weight: 600;
-      line-height: 22px;
+      margin: 0 0 1.5rem 0;
+      font-size: 1rem;
+      line-height: 1.25rem;
     }
-    &__text {
-      @include tablet {
-        column-count: 2;
-        column-gap: 20px;
-        text-align:start;
-        font-size: .875rem;
-        font-weight: 400;
+    &__text--one {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin: 0 0 1.5rem 0;
+    }
+    &__text--two {
+      font-size: 1rem;
+      line-height: 1rem;
+      margin: 0 0 1.5rem 0;
+    }
+  }
+
+  @include tablet {
+    .band-description{
+      margin: 0 1.5rem;
+  
+      &__title {
+        font-size: 35px;
+        line-height: 2.8125rem;
+        margin: 2rem 0 1.5rem 0;
+   
       }
-      @include desktop {
-        column-count: 2;
-        column-gap: 20px;
-        text-align:start;
-        font-size: .875rem;
-        font-weight: 400;
+      &-imgcontainer {
+        height: 47vw;
+        margin: 0 0 1.5 0;
+      }
+      &__image {
+        height: 100%;
+        width: 100%;
+      }
+      &__quote {
+        margin: 0 0 2rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 90vw;
+      }
+      &__musician {
+        margin: 0 0 2.5rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      &__band-name {
+        margin: 0 0 1.5rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      &__text--one {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0 0 2.5rem 0;
+      }
+      &__text--two {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0 0 2.5rem 0;
       }
     }
+  }
+
+  @include desktop {
+    .band-description{
+      margin: 0;
+
+      &__title {
+        font-size: 35px;
+        line-height: 2.8125rem;
+        margin: 3rem 0 3rem 11rem;
+   
+      }
+      &-imgcontainer {
+        height: 31vw;
+        margin: 0 16rem 3rem 16rem;
+      }
+      &__quote {
+        margin: 0 0 2.5rem 16rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        width: 59vw;
+      }
+      &__musician {
+        margin: 0 0 3.5rem 16rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      &__band-name {
+        margin: 0 0 2rem 16rem;
+        font-size: 1.5rem;
+        line-height: 2rem;
+      }
+      &__text-container {
+        display: flex;
+        margin: 0 17rem 3rem 1rem;
+      }
+      &__text--one {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0 0 2.5rem 0;
+      }
+      &__text--two {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin: 0;
+      }
+    }
+
   }
 
 
 
 .gallery {
   background-color: $secondary-coloralabaster;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: left;
 
-  &__img {
-    margin-top: 24px;
+  &__container {
+    margin: 0 1rem;
   }
-
+  &__title {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0 0 1.5rem 0;
+    padding-top: 2rem;
+  }
   &__flex {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    img {
-      width: 100%;
-      height: auto;
-      margin: 5px;
+    flex-direction: column;
+  }
+  &__image {
+    height: 50vw;
+    width: 100%;
+    margin-bottom: 1rem;
+    &-nine {
+      margin-bottom: 2rem;
     }
   }
+}
 
-  @include tablet {
-    .gallery__flex img {
-      width: calc(33.33% - 10px);
+@include tablet {
+  .gallery {
+    background-color: $secondary-coloralabaster;
+  
+    &__container {
+      margin: 0;
+    }
+    &__title {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0 0 1.5rem 0;
+      padding-top: 2rem;
+    }
+    &__flex {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+
+    }
+    &__image {
+      height: 15vw;
+      width: 30vw;
+      margin:0 1.5rem 1.5rem 0;
+      &-three, &-six, &-nine {
+        margin-right: 0;
+      }
     }
   }
-  @include desktop {
-    .gallery__flex img {
-      width: calc(33.33% - 10px);
+}
+
+@include desktop {
+  .gallery {
+    background-color: $secondary-coloralabaster;
+  
+    &__container {
+      margin: 0;
+    }
+    &__title {
+      font-size: 2.5rem;
+      line-height: 3rem;
+      margin: 0 0 4rem 0;
+      padding-top: 3rem;
+    }
+    &__flex {
+      display: flex;
+      flex-direction: wrap;
+      flex: row;
+      justify-content: center;
+    }
+    &__image {
+      height: 10vw;
+      width: 24vw;
+      margin:0 1.5rem 1.5rem 0;
+      &-three, &-six, &-nine {
+        margin-right: 0;
+      }
+      &-seven, &-eight, &-nine {
+        margin-bottom: 3rem;
+      }
     }
   }
 }

@@ -8,7 +8,7 @@
         let title = document.createElement("h1");
         title.classList.add("tour__title");
         titleContainer.appendChild(title);
-        title.innerText = "Tour";
+        title.innerText = "Shows";
 
         let showsContainer = document.createElement("div");
         showsContainer.classList.add("tour__container-all");

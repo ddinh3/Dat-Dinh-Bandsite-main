@@ -95,81 +95,214 @@ body .hero-section h1 {
   left: 1.9375rem;
 }
 body .band-description {
-  padding-left: 1rem;
-  padding-right: 1rem;
-  display: flex;
-  flex-direction: column;
+  margin: 0 1rem;
 }
 body .band-description__title {
-  display: flex;
-  color: #323232;
-  position: relative;
   font-size: 1.5rem;
   line-height: 2rem;
-  font-weight: 700;
+  margin: 2rem 0 1.5rem 0;
 }
-body .band-description__quote {
-  color: #000000;
+body .band-description-imgcontainer {
+  height: 45vw;
+  margin: 0 0 1.5 0;
 }
 body .band-description__image {
-  width: 95%;
-  padding-left: 16px;
+  height: 100%;
+  width: 100%;
+}
+body .band-description__quote {
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+body .band-description__musician {
+  margin: 0 0 1.5rem 0;
+  font-size: 1.5rem;
+  line-height: 2rem;
 }
 body .band-description__band-name {
-  color: #000000;
-  font-size: 1.85rem;
-  font-weight: 600;
-  line-height: 22px;
+  margin: 0 0 1.5rem 0;
+  font-size: 1rem;
+  line-height: 1.25rem;
+}
+body .band-description__text--one {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0 0 1.5rem 0;
+}
+body .band-description__text--two {
+  font-size: 1rem;
+  line-height: 1rem;
+  margin: 0 0 1.5rem 0;
 }
 @media screen and (min-width: 768px) {
-  body .band-description__text {
-    -moz-column-count: 2;
-         column-count: 2;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    text-align: start;
-    font-size: 0.875rem;
-    font-weight: 400;
+  body .band-description {
+    margin: 0 1.5rem;
+  }
+  body .band-description__title {
+    font-size: 35px;
+    line-height: 2.8125rem;
+    margin: 2rem 0 1.5rem 0;
+  }
+  body .band-description-imgcontainer {
+    height: 47vw;
+    margin: 0 0 1.5 0;
+  }
+  body .band-description__image {
+    height: 100%;
+    width: 100%;
+  }
+  body .band-description__quote {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 90vw;
+  }
+  body .band-description__musician {
+    margin: 0 0 2.5rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body .band-description__band-name {
+    margin: 0 0 1.5rem 0;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body .band-description__text--one {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0 0 2.5rem 0;
+  }
+  body .band-description__text--two {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0 0 2.5rem 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .band-description__text {
-    -moz-column-count: 2;
-         column-count: 2;
-    -moz-column-gap: 20px;
-         column-gap: 20px;
-    text-align: start;
-    font-size: 0.875rem;
-    font-weight: 400;
+  body .band-description {
+    margin: 0;
+  }
+  body .band-description__title {
+    font-size: 35px;
+    line-height: 2.8125rem;
+    margin: 3rem 0 3rem 11rem;
+  }
+  body .band-description-imgcontainer {
+    height: 31vw;
+    margin: 0 16rem 3rem 16rem;
+  }
+  body .band-description__quote {
+    margin: 0 0 2.5rem 16rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 59vw;
+  }
+  body .band-description__musician {
+    margin: 0 0 3.5rem 16rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body .band-description__band-name {
+    margin: 0 0 2rem 16rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+  body .band-description__text-container {
+    display: flex;
+    margin: 0 17rem 3rem 1rem;
+  }
+  body .band-description__text--one {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0 0 2.5rem 0;
+  }
+  body .band-description__text--two {
+    font-size: 1rem;
+    line-height: 1rem;
+    margin: 0;
   }
 }
 body .gallery {
   background-color: #FAFAFA;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  text-align: left;
 }
-body .gallery__img {
-  margin-top: 24px;
+body .gallery__container {
+  margin: 0 1rem;
+}
+body .gallery__title {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0 0 1.5rem 0;
+  padding-top: 2rem;
 }
 body .gallery__flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  flex-direction: column;
 }
-body .gallery__flex img {
+body .gallery__image {
+  height: 50vw;
   width: 100%;
-  height: auto;
-  margin: 5px;
+  margin-bottom: 1rem;
+}
+body .gallery__image-nine {
+  margin-bottom: 2rem;
 }
 @media screen and (min-width: 768px) {
-  body .gallery .gallery__flex img {
-    width: calc(33.33% - 10px);
+  body .gallery {
+    background-color: #FAFAFA;
+  }
+  body .gallery__container {
+    margin: 0;
+  }
+  body .gallery__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 1.5rem 0;
+    padding-top: 2rem;
+  }
+  body .gallery__flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  body .gallery__image {
+    height: 15vw;
+    width: 30vw;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+  body .gallery__image-three, body .gallery__image-six, body .gallery__image-nine {
+    margin-right: 0;
   }
 }
 @media screen and (min-width: 1024px) {
-  body .gallery .gallery__flex img {
-    width: calc(33.33% - 10px);
+  body .gallery {
+    background-color: #FAFAFA;
+  }
+  body .gallery__container {
+    margin: 0;
+  }
+  body .gallery__title {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0 0 4rem 0;
+    padding-top: 3rem;
+  }
+  body .gallery__flex {
+    display: flex;
+    flex-direction: wrap;
+    flex: row;
+    justify-content: center;
+  }
+  body .gallery__image {
+    height: 10vw;
+    width: 24vw;
+    margin: 0 1.5rem 1.5rem 0;
+  }
+  body .gallery__image-three, body .gallery__image-six, body .gallery__image-nine {
+    margin-right: 0;
+  }
+  body .gallery__image-seven, body .gallery__image-eight, body .gallery__image-nine {
+    margin-bottom: 3rem;
   }
 }
 body footer {

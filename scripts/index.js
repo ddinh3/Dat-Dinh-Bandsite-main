@@ -58,8 +58,6 @@ form.addEventListener("submit", submitEvent => {
     alert("Please enter both a name and a comment.");
     return; 
   }
-
-
   axios
     .post("https://project-1-api.herokuapp.com/comments?api_key=31ebd8cc-34f4-4928-9319-12addc32c4df", {
       name: name,
