@@ -1,36 +1,4 @@
-var tour = [
-    {
-        date: "Mon Sept 06 2021",
-        venue: "Ronald Lane",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Tue Sept 21 2021",
-        venue: "Pier 3 East",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Fri Oct 15 2021",
-        venue: "View Lounge",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Sat Nov 6 2021",
-        venue: "Hyatt Agency",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Fri Nov 26",
-        venue: "Moscow Center",
-        location: "San Francisco, CA"
-    },
-    {
-        date: "Wed Dec 15 2021",
-        venue: "Press Club",
-        location: "San Francisco, CA"
-    }
-];
-    function table(arr) {
+   function table(arr) {
         let tableContainer = document.querySelector(".tour__container");
 
         let titleContainer = document.createElement("div");
@@ -68,10 +36,10 @@ var tour = [
         let buttonHeader = document.createElement("button");
         buttonHeader.classList.add("tour__header-container--button-header");
         headerContainer.appendChild(buttonHeader);
+
         buttonHeader.innerText = "BUY TICKETS";
 
-        for (let i = 0; i <tour.length; i++) {
-    
+        for (let i = 0; i < arr.length; i++) {
         let oneContainer = document.createElement("div");
         oneContainer.classList.add("tour__one-container");
         showsContainer.appendChild(oneContainer);
@@ -94,7 +62,7 @@ var tour = [
         let venue = document.createElement("h3");
         venue.classList.add("tour__one-container--venue");
         oneContainer.appendChild(venue);
-        venue.innerText = arr[i]["venue"];
+        venue.innerText = arr[i]["place"];
 
         let locationLabel = document.createElement("h3");
         locationLabel.classList.add("tour__one-container--location-label");
@@ -116,4 +84,14 @@ var tour = [
         button.innerText = "BUY TICKETS";
         }
     }
-    table(tour);
+    // table(arr);
+
+    let tourList = axios.get("https://project-1-api.herokuapp.com/showdates?api_key=31ebd8cc-34f4-4928-9319-12addc32c4df");
+    tourList.then(response => {
+      table(response.data);
+      console.log(response.data);
+    }).catch(error => {
+      console.log("error try again");
+    });
+    
+    
